@@ -40,7 +40,7 @@ for (let i = 0; i < 3; i++) {
         }
         else {
             p.style.background = "white";
-            p.style.color = "black";
+            //p.style.color = "black";
         }
     }
     const p = document.querySelectorAll("p");
@@ -48,23 +48,22 @@ for (let i = 0; i < 3; i++) {
     if (i == 0) {
         for (let i = 0; i < list; i++) {
             p[i].innerText = i;
-            p[4].style.background = "inherit";
-
         }
+        p[4].style.background = "inherit";
     }
     else if (i == 1) {
         for (let j = 0; j < list; j++) {
             p[list + j].innerText = 9 - j;
             p[list + j].style.textAlign = "center";
-            p[list + 1].style.background = "inherit";
         }
+        p[list + 1].style.background = "inherit";
     }
     else if (i == 2) {
         for (let i = 0; i < list; i++) {
             p[list * 2 + i].innerText = array[i];
             p[list * 2 + i].style.textAlign = "right";
-            p[list * 2 + 5].style.background = "inherit";
         }
+        p[list * 2 + 5].style.background = "inherit";
     }
 
 }
